@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400,700&display=swap');
+
+:root {
+  /* Fonts */
+  --font-family-base: 'Raleway', sans-serif;
+  --font-family-heading: 'Gogh', sans-serif;
+
+  /* Colors */
+  --main-color: #14cccc;
+  --main-color-dark: #11a6a6;
+  --main-color1-light: #17e5e5;
+
+  --black: #030d0d;
+  --main-gray-dark: #3d4040;
+  --main-gray-light: #daf2f2;
+  --main-gray-lighter: #e1fafa;
+  --white: #fff;
+
+  --button-main-shadow-press: #daf2f2;
+  --input-error: #f66;
+
+  /* Font size */
+  --h1: 56px;
+  --h2: 40px;
+  --h3: 28px;
+  --h4: 20px;
+
+  --t1: 20px;
+  --t2: 16px;
+  --t3: 14px;
+
+  /* Line heig */
+  --lh150: 150%;
+  --lh100: 100%;
+
+  /* Transition */
+  --transition-base: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {
+  :root {
+    /* Font size */
+    --h1: 32px;
+    --h2: 28px;
+    --h3: 24px;
+  }
+}
