@@ -2,3 +2,6 @@
 @import 'options/fonts.css';
 @import 'options/variables.css';
 @import 'options/base.css';
+
+/* Layout */
+@import 'layout/header.css';
