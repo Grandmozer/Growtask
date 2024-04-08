@@ -1,0 +1,54 @@
+.about-vacancy {
+  margin-top: -39px;
+  background-color: var(--main-gray-lighter);
+}
+
+.abaout-vacancy_content {
+  /* padding-top: 113px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 20px; */
+  display: flex;
+}
+
+.about-vacancy_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.abaout-vacancy_p {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+
+/* может бордер радиус тоже сделать в правила он везде 8px похоже */
+
+.about-vacancy_info-card {
+  display: flex;
+  width: 580px;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+  border-radius: 8px;
+  background: var(--Main-Gray-Black, #030d0d);
+}
+
+.about-vacancy_info-card p {
+  color: var(--white);
+}
+
+.turquoise-text {
+  font-family: var(--font-family-heading);
+  font-size: var(--h1);
+  font-weight: 800;
+  line-height: var(--lh100);
+  color: var(--main-color1-light) !important    ;
+  /* мне не нравится импортант */
+}

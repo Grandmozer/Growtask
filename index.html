@@ -8,61 +8,75 @@
     <!-- test -->
     <link rel="stylesheet" href="src/css/options/base.css" />
     <link rel="stylesheet" href="src/css/layout/header.css" />
+    <link rel="stylesheet" href="src/css/components/hero.css" />
+    <link rel="stylesheet" href="src/css/components/abaout-vacancy.css" />
 
     <title>Growtask</title>
   </head>
   <body>
-    <header class="container">
-      <a class="logo" href="#">
-        <img src="src/img/header/logo.svg" alt="logo" />
-      </a>
-      <ul class="header-nav">
-        <li>Текст и картинки</li>
-        <li>Пример слайдера</li>
-        <li>Кнопки и картинки</li>
-        <li>Вопрос — ответ</li>
-        <a class="link-form" href="">К форме</a>
-      </ul>
+    <header class="header">
+      <div class="container header-content">
+        <a class="logo" href="#">
+          <img src="src/img/header/logo.svg" alt="logo" />
+        </a>
+        <ul class="header-nav">
+          <li class="header-nav-item">Текст и картинки</li>
+          <li class="header-nav-item">Пример слайдера</li>
+          <li class="header-nav-item">Кнопки и картинки</li>
+          <li class="header-nav-item">Вопрос — ответ</li>
+          <a class="link-to-form" href="">К форме</a>
+        </ul>
+      </div>
     </header>
-    <section class="hero">
-      <div class="title-hero">
-        <h1>Покажи нам чудеса <span>своей вёрстки</span></h1>
-        <p>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1 class="title-hero">Покажи нам чудеса <span>своей вёрстки</span></h1>
+        <p class="hero-p">
           Это текстовое задание, которое нужно просто и грамотно сверстать. Мы уверены, что у тебя
           всё получится.
         </p>
-        <div class="link-form-hero">
+        <div class="hero_link-to-form">
           <p>Покажи скролл на <span>до формы:</span></p>
-          <a class="link-form" href="">К форме</a>
+          <a class="link-to-form" href="#form">К форме</a>
         </div>
       </div>
-      <div class="imgs-hero"></div>
+      <div class="imgs-hero">
+        <img src="/src/img/hero/image1.jpg" alt="" />
+        <img src="/src/img/hero/image3.jpg" alt="" />
+        <img src="/src/img/hero/image2.jpg" alt="" />
+      </div>
     </section>
     <section class="about-vacancy">
-      <h2 class="title">Про вакансию</h2>
-      <p>
-        Мы ищем аккуратного верстальщика, который хочет учиться и развиваться. С этим мы, конечно
-        же, поможем.Напомним про условия:
-      </p>
-      <div class="about-vacancy_info">
-        <div class="about-vacancy_info-card">
-          <p class="turquoise-text">20 000</p>
-          <p>Твой оклад на время стажировки (Возможны премии)</p>
+      <div class="container abaout-vacancy_content">
+        <div class="about-vacancy_info">
+          <h2 class="title">Про вакансию</h2>
+          <p class="about-vacancy_p">
+            Мы ищем аккуратного верстальщика, который хочет учиться и развиваться. С этим мы,
+            конечно же, поможем. <br />Напомним про условия:
+          </p>
+          <div class="about-vacancy_info-card">
+            <p class="turquoise-text">20 000</p>
+            <p>Твой оклад на время стажировки (Возможны премии)</p>
+          </div>
+          <div class="about-vacancy_info-card">
+            <p class="turquoise-text">5/2</p>
+            <p>Рабочий график</p>
+          </div>
+          <div class="about-vacancy_info-card">
+            <p class="turquoise-text">8 ч</p>
+            <p>Рабочий день</p>
+          </div>
         </div>
-        <div class="about-vacancy_info-card">
-          <p class="turquoise-text">5/2</p>
-          <p>Рабочий график</p>
-        </div>
-        <div class="about-vacancy_info-card">
-          <p class="turquoise-text">8 ч</p>
-          <p>Рабочий день</p>
+        <div class="about-vacancy_imgs">
+          <img src="/src/img/about-vacancy/image1.jpg" alt="" />
+          <img src="/src/img/about-vacancy/image2.jpg" alt="" />
+          <img src="/src/img/about-vacancy/image3.jpg" alt="" />
         </div>
       </div>
-      <div class="about-vacancy_imgs"></div>
     </section>
     <section class="slider">
       <div class="slider-title">
-        <h2>Сверстай слайдер</h2>
+        <h2 class="title">Сверстай слайдер</h2>
         <div class="arrows">
           <button class="prev"></button>
           <button class="next"></button>
@@ -99,6 +113,6 @@
         </ul>
       </div>
     </section>
-    <section class="form"></section>
+    <footer id="form" class="footer"></footer>
   </body>
 </html>

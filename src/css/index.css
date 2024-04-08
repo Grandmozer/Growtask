@@ -5,3 +5,7 @@
 
 /* Layout */
 @import 'layout/header.css';
+
+/* Components */
+@import 'components/hero.css';
+@import 'components/abaout-vacancy.css';
