@@ -2,6 +2,7 @@
 @import 'options/fonts.css';
 @import 'options/variables.css';
 @import 'options/base.css';
+@import 'options/btn.css';
 
 /* Layout */
 @import 'layout/header.css';
@@ -9,3 +10,4 @@
 /* Components */
 @import 'components/hero.css';
 @import 'components/abaout-vacancy.css';
+@import 'components/slider.css';

@@ -1,0 +1,27 @@
+.link-to-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  height: 48px;
+  gap: 8px;
+  border-radius: 4px;
+  background: var(--main-color);
+
+  color: var(--white);
+  font-size: var(--t3);
+  font-weight: 700;
+  line-height: var(--lh150);
+}
+
+.slider-arrows {
+  border: 1px solid red;
+}
+.prev,
+.next {
+  width: 24px;
+  height: 24px;
+  background-image: url(/src/img/slider/Main.svg);
+  border: 1px solid red;
+  background-size: 100%;
+}

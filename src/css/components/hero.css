@@ -50,7 +50,7 @@
   padding: 40px;
   align-items: center;
   gap: 27px;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   background: var(--black);
 }
 
@@ -74,7 +74,7 @@
 }
 
 .imgs-hero img {
-  border-radius: 8px;
+  border-radius: var(--border-radius);
 }
 
 /* 53% */

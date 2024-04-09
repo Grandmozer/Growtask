@@ -1,43 +1,44 @@
 .about-vacancy {
   margin-top: -39px;
+  padding-bottom: 120px;
   background-color: var(--main-gray-lighter);
 }
 
 .abaout-vacancy_content {
-  /* padding-top: 113px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 40px;
-  grid-row-gap: 20px; */
+  padding-top: 120px;
+  grid-column-gap: 140px;
   display: flex;
 }
 
 .about-vacancy_info {
+  margin-top: -7px; /* маргин может не понадобиться */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 80px;
+  gap: var(--gap);
 }
 
-.abaout-vacancy_p {
+.about-vacancy_p {
+  margin-top: 12px;
+  margin-bottom: 60px;
+  width: 30vw;
+  font-size: var(--t1);
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 30px */
 }
 
-/* может бордер радиус тоже сделать в правила он везде 8px похоже */
-
 .about-vacancy_info-card {
   display: flex;
-  width: 580px;
+
+  width: 26vw;
+
   padding: 40px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
-
-  border-radius: 8px;
-  background: var(--Main-Gray-Black, #030d0d);
+  gap: 25px;
+  border-radius: var(--border-radius);
+  background: var(--black);
 }
 
 .about-vacancy_info-card p {
@@ -51,4 +52,13 @@
   line-height: var(--lh100);
   color: var(--main-color1-light) !important    ;
   /* мне не нравится импортант */
+}
+
+.about-vacancy_imgs {
+  display: grid;
+  gap: 40px;
+}
+
+.about-vacancy_imgs img {
+  border-radius: var(--border-radius);
 }
