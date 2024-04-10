@@ -9,10 +9,15 @@
     <link rel="stylesheet" href="src/css/options/base.css" />
     <link rel="stylesheet" href="src/css/options/btn.css" />
     <link rel="stylesheet" href="src/css/layout/header.css" />
+    <link rel="stylesheet" href="src/css/layout/footer.css" />
     <link rel="stylesheet" href="src/css/components/hero.css" />
     <link rel="stylesheet" href="src/css/components/abaout-vacancy.css" />
     <link rel="stylesheet" href="src/css/components/slider.css" />
+    <link rel="stylesheet" href="src/css/components/galary.css" />
+    <link rel="stylesheet" href="src/css/components/questions.css" />
     <script defer src="/src/js/slider.js"></script>
+    <script defer src="/src/js/galary.js"></script>
+    <script defer src="/src/js/questions.js"></script>
 
     <title>Growtask</title>
   </head>
@@ -22,13 +27,13 @@
         <a class="logo" href="#">
           <img src="src/img/header/logo.svg" alt="logo" />
         </a>
-        <ul class="header-nav">
-          <li class="header-nav-item">Текст и картинки</li>
-          <li class="header-nav-item">Пример слайдера</li>
-          <li class="header-nav-item">Кнопки и картинки</li>
-          <li class="header-nav-item">Вопрос — ответ</li>
+        <div class="header-nav">
+          <button class="header-nav-item">Текст и картинки</button>
+          <button class="header-nav-item">Пример слайдера</button>
+          <button class="header-nav-item">Кнопки и картинки</button>
+          <button class="header-nav-item">Вопрос — ответ</button>
           <a class="link-to-form" href="">К форме</a>
-        </ul>
+        </div>
       </div>
     </header>
     <section class="hero container">
@@ -121,30 +126,64 @@
       </div>
     </section>
     <section class="galary">
-      <div class="galary-img"></div>
-      <button class="galary-btn">Картинка 1</button>
-      <button class="galary-btn">Картинка 2</button>
-      <button class="galary-btn">Картинка 3</button>
+      <div class="container">
+        <div class="wrapper">
+          <div id="sliderWindow"></div>
+          <div class="galary-btns miniImgWrap">
+            <button class="galary-btn">
+              <div class="miniImg"></div>
+              <p>Картинка 1</p>
+            </button>
+            <button class="galary-btn">
+              <div class="miniImg"></div>
+              <p>Картинка 2</p>
+            </button>
+            <button class="galary-btn">
+              <div class="miniImg"></div>
+              <p>Картинка 3</p>
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="qustion">
+    <section class="questions container">
       <h2 class="title">Ответы на вопросы</h2>
-      <div class="block">
-        <ul>
-          <li>
-            <h3>У вас много проектов?</h3>
-            <p>some text</p>
+      <div>
+        <ul class="questions-list">
+          <li class="question">
+            <div class="line">
+              <h3>У вас много проектов?</h3>
+              <button class="question-plus"></button>
+            </div>
+            <p class="question-text">
+              Достаточно, чтобы работать и получать удовольствие от работы &#41;
+            </p>
           </li>
-          <li>
-            <h3>Есть ли карьерный рост?</h3>
-            <p>some text</p>
+          <li class="question">
+            <div class="line">
+              <h3>Есть ли карьерный рост?</h3>
+              <button class="question-plus"></button>
+            </div>
+            <p class="question-text">
+              Карьерный рост есть, но он зависит только от тебя. Никто специально тянуть не будет.
+            </p>
           </li>
-          <li>
-            <h3>У вас большой штат?</h3>
-            <p>some text</p>
+          <li class="question">
+            <div class="line">
+              <h3>У вас большой штат?</h3>
+              <button class="question-plus"></button>
+            </div>
+            <p class="question-text">Штат небольшой</p>
           </li>
-          <li>
-            <h3>Какие цели у вашей студии?</h3>
-            <p>some text</p>
+          <li class="question">
+            <div class="line">
+              <h3>Какие цели у вашей студии?</h3>
+              <button class="question-plus"></button>
+            </div>
+            <p class="question-text">
+              Развивать свои продукты в среднем ценовом сегменте. Занять не занятую нишу отличных
+              сайтов по адекватной цене.
+            </p>
           </li>
         </ul>
       </div>

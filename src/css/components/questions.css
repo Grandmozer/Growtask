@@ -1,0 +1,38 @@
+.questions {
+  padding-top: 111px;
+  padding-bottom: 120px;
+}
+
+.questions-list {
+  margin-top: 52px;
+  display: grid;
+  gap: 20px;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.question {
+  background-color: var(--main-gray-lighter);
+  border-radius: var(--border-radius);
+  padding: 12px 12px 12px 24px;
+  cursor: pointer;
+
+  & h3 {
+    padding-top: 12px;
+    font-size: var(--t2);
+    font-weight: 700;
+    line-height: var(--lh150);
+  }
+}
+
+.do-not-display {
+  display: none;
+}
+
+.active .do-not-display {
+  display: block;
+}

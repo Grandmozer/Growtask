@@ -6,8 +6,11 @@
 
 /* Layout */
 @import 'layout/header.css';
+@import 'layout/footer.css';
 
 /* Components */
 @import 'components/hero.css';
 @import 'components/abaout-vacancy.css';
 @import 'components/slider.css';
+@import 'components/galary.css';
+@import 'components/questions.css';

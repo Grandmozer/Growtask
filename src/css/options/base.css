@@ -22,6 +22,10 @@ ul li {
   list-style: none;
 }
 
+button {
+  border: none;
+}
+
 body {
   font-family: var(--font-family-base);
   font-weight: 400;
@@ -36,6 +40,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family-heading);
+  color: var(--text-icon-gray-black);
 }
 
 .container {

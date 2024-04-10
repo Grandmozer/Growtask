@@ -1,0 +1,32 @@
+.galary {
+  background-color: var(--main-gray-lighter);
+}
+
+.wrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+}
+
+#sliderWindow {
+  width: 49vw;
+  height: 25vw;
+  border-radius: var(--border-radius);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* .miniImgWrap {
+  display: flex;
+  justify-content: space-around;
+} */
+
+.miniImg {
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+  border-radius: 4px;
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

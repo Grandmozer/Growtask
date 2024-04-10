@@ -29,6 +29,7 @@ let slider = document.querySelector('.slider'),
   getEvent = function () {
     return event.type.search('touch') !== -1 ? event.touches[0] : event;
   },
+  // Сдвиг эллементов влево на размер слайда
   slide = function () {
     if (transition) {
       sliderTrack.style.transition = 'transform .5s';
@@ -95,7 +96,7 @@ let slider = document.querySelector('.slider'),
         }
       }
 
-      // запрет ухода вправо на последнем слайде
+      // Запрет ухода вправо на последнем слайде
       if (slideIndex === --slides.length) {
         if (posInit > posX1) {
           setTransform(transform, lastTrf);
@@ -127,6 +128,7 @@ let slider = document.querySelector('.slider'),
     sliderList.classList.add('grab');
     sliderList.classList.remove('grabbing');
 
+    // Тач-события на сдвиг
     if (allowSwipe) {
       swipeEndTime = Date.now();
       if (Math.abs(posFinal) > posThreshold || swipeEndTime - swipeStartTime < 300) {
@@ -170,6 +172,7 @@ sliderTrack.addEventListener('transitionend', () => (allowSwipe = true));
 slider.addEventListener('touchstart', swipeStart);
 slider.addEventListener('mousedown', swipeStart);
 
+// Кнопки слайдера
 arrows.addEventListener('click', function () {
   let target = event.target;
 

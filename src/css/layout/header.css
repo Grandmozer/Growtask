@@ -24,14 +24,3 @@
   align-items: center;
   /* gap: 32px; */
 }
-
-.header-nav-item {
-  padding: 16px 20px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  font-size: var(--t2);
-
-  font-weight: 700;
-  line-height: var(--lh150);
-}
