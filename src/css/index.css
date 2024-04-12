@@ -5,8 +5,8 @@
 @import 'options/btn.css';
 
 /* Layout */
-@import 'layout/header.css';
 @import 'layout/footer.css';
+@import 'layout/header.css';
 
 /* Components */
 @import 'components/hero.css';

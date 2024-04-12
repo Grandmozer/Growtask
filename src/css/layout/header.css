@@ -68,6 +68,10 @@
   }
   .header-nav {
     box-shadow: inset 0px 50px 50px -30px rgba(5, 25, 25, 0.08);
+    & .social {
+      margin-left: 20px;
+      margin-top: 20px;
+    }
   }
 }
 /*  Burger */

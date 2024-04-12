@@ -104,9 +104,9 @@
     padding: 20px;
     margin-top: 37px;
     flex-direction: column;
-  }
-  .link-to-form {
-    width: -moz-available;
+    & .link-to-form {
+      width: -moz-available;
+    }
   }
 }
 @media only screen and (max-width: 378px) {

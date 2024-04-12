@@ -49,7 +49,6 @@ body {
   font-weight: 400;
   color: var(--main-gray-dark);
   font-style: normal;
-  overflow: hidden;
   overflow-x: hidden;
 }
 
