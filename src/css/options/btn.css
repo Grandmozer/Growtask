@@ -1,8 +1,7 @@
 /* header */
 .header-nav-item {
   background: transparent;
-
-  padding: 16px 20px;
+  padding: 16px 12px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -11,6 +10,17 @@
   font-weight: 700;
   line-height: var(--lh150);
   color: var(--main-gray-dark);
+}
+
+.header-nav-item a:hover {
+  transition: var(--transition-base);
+  color: var(--main-color-dark);
+}
+
+.header-nav-item:active {
+  transition: var(--transition-base);
+  background-color: var(--main-gray-light);
+  border-radius: 4px;
 }
 
 .link-to-form {
@@ -26,6 +36,16 @@
   font-size: var(--t3);
   font-weight: 700;
   line-height: var(--lh150);
+}
+
+.link-to-form:hover {
+  transition: var(--transition-base);
+  background: var(--main-color1-light);
+}
+
+.link-to-form:active {
+  transition: var(--transition-base);
+  background: var(--main-color-dark);
 }
 
 /* slider */
@@ -44,6 +64,7 @@
   background-position: center;
   box-shadow: 0px 0px 20px 0px rgba(13, 64, 64, 0.1);
   cursor: pointer;
+  transition: var(--transition-base);
   border-radius: var(--border-radius);
 }
 
@@ -53,6 +74,22 @@
 
 .next {
   transform: rotate(180deg);
+}
+
+.prev:hover,
+.next:hover {
+  background: var(--main-gray-lighter);
+  background-image: url(/src/img/slider/Icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.prev:active,
+.next:active {
+  background: var(--main-gray-light);
+  background-image: url(/src/img/slider/Icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* galary */
@@ -71,24 +108,51 @@
   justify-content: start;
   background: var(--white);
   border-radius: 4px;
+  cursor: pointer;
 
   font-size: var(--t1);
   font-family: var(--font-family-base);
   font-weight: 400;
   line-height: var(--lh150);
+  border: 2px solid var(--white);
 }
 
+.galary-btn:hover {
+  /* padding:  8px 12px; */
+
+  border: 2px solid var(--main-gray-light);
+}
+
+.galary-btn-active {
+  border: 2px solid var(--main-color);
+}
 /* questions */
 .question-plus {
   width: 48px;
   height: 48px;
   gap: 8px;
   border-radius: 4px;
+  transition: var(--transition-base);
 
   background: var(--main-color);
   background-image: url(/src/img/questions/Icon.svg);
   background-repeat: no-repeat;
   background-position: center;
-
-  /* поворотик не забыть */
 }
+
+.question-plus:hover {
+  background: var(--main-color1-light);
+  background-image: url(/src/img/questions/Icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: var(--transition-base);
+}
+.question-plus:active {
+  background: var(--main-color-dark);
+  background-image: url(/src/img/questions/IconRotate.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: var(--transition-base);
+}
+
+/* footer */

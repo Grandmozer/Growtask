@@ -30,3 +30,54 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@media only screen and (max-width: 1367px) {
+  .wrapper {
+    padding-top: 60px;
+  }
+  #sliderWindow {
+    width: 62vw;
+    height: 31vw;
+  }
+  .galary-btns {
+    padding-left: 38px;
+    gap: 23px;
+  }
+  .galary-btn {
+    padding: 9px;
+    width: 28vw;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .wrapper {
+    padding-top: 80px;
+    padding-bottom: 82px;
+  }
+  #sliderWindow {
+    width: 45vw;
+    height: 23vw;
+  }
+  .galary-btns {
+    padding-left: 13px;
+  }
+  .galary-btn {
+    width: 49vw;
+  }
+}
+@media only screen and (max-width: 378px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  #sliderWindow {
+    width: 90vw;
+    height: 46vw;
+  }
+  .galary-btns {
+    margin-top: 44px;
+    padding-left: 0px;
+  }
+  .galary-btn {
+    width: 90vw;
+  }
+}

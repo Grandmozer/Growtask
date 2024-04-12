@@ -42,14 +42,19 @@
 
   /*Grid*/
   --gap: 20px;
-  --container-width: 1420px;
+  --container-width: 74vw;
 }
 
 /* container size */
 /* 1276px */
 /* 736px */
 /* 342px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1367px) {
+  :root {
+    --container-width: calc(93vw + 4px);
+  }
+}
+@media only screen and (max-width: 770px) {
   :root {
     /* Font size */
     --h1: 32px;
@@ -57,5 +62,11 @@
     --h3: 24px;
 
     --container-width: 736px;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  :root {
+    --container-width: 342px;
   }
 }

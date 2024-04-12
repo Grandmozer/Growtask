@@ -3,17 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: calc(6vh + 1px);
+  padding-top: calc(4vh + 3px);
 }
 
 .hero-text {
-  /* width: 30vw;
-  padding-top: 80px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 40px;
-  grid-row-gap: 20px; */
   display: flex;
   padding-top: 80px;
   flex-direction: column;
@@ -25,16 +18,13 @@
   font-size: var(--h1);
   font-weight: 800;
   line-height: var(--lh100);
-
   display: flex;
-  /* padding: 80px 0px; */
   flex-direction: column;
   align-items: flex-start;
-  /* gap: 60px; */
-}
 
-.title-hero span {
-  color: var(--main-color-dark);
+  & span {
+    color: var(--main-color-dark);
+  }
 }
 
 .hero-p {
@@ -52,17 +42,17 @@
   gap: 27px;
   border-radius: var(--border-radius);
   background: var(--black);
-}
 
-.hero_link-to-form p {
-  font-size: var(--t1);
-  font-weight: 800;
-  line-height: var(--lh100);
-  color: var(--white);
-}
+  & p {
+    font-size: var(--t1);
+    font-weight: 800;
+    line-height: var(--lh100);
+    color: var(--white);
+  }
 
-.hero_link-to-form span {
-  color: var(--main-color);
+  & span {
+    color: var(--main-color);
+  }
 }
 
 .imgs-hero {
@@ -71,17 +61,73 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-}
 
-.imgs-hero img {
-  border-radius: var(--border-radius);
+  & img {
+    border-radius: var(--border-radius);
+  }
 }
-
-/* 53% */
 
 .imgs-hero img:nth-child(2n) {
   margin-top: 50%;
 }
 .imgs-hero img:nth-child(3n) {
   margin-top: -50%;
+}
+
+@media only screen and (max-width: 1367px) {
+  .hero {
+    height: 787px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+  }
+  .imgs-hero img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .hero {
+    padding-top: calc(8vh + 3px);
+    height: 475px;
+  }
+  .hero-text {
+    gap: 20px;
+    padding-top: 0px;
+  }
+  .hero-p {
+    font-size: var(--t2);
+    width: 44vw;
+  }
+  .hero_link-to-form {
+    padding: 20px;
+    margin-top: 37px;
+    flex-direction: column;
+  }
+  .link-to-form {
+    width: -moz-available;
+  }
+}
+@media only screen and (max-width: 378px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 20px;
+    height: 820px;
+  }
+  .header-content {
+    width: 90vw;
+  }
+  .hero-p {
+    width: 88vw;
+  }
+  .hero_link-to-form {
+    margin-top: 401px;
+  }
+  .imgs-hero {
+    margin-top: -538px;
+  }
 }
