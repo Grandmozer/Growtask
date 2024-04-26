@@ -1,0 +1,170 @@
+//Шрифты
+@mixin h1 {
+  font-size: vw(56px);
+  line-height: 100%;
+  @media screen and (max-width: 1367px) {
+    font-size: vwh(56px);
+  }
+  @media screen and (max-width: 770px) {
+    font-size: vwt(31px);
+  }
+  @media screen and (max-width: 378px) {
+    font-size: vwm(31px);
+  }
+}
+
+@mixin h2 {
+  font-size: vw(40px);
+  line-height: 100%;
+  @media screen and (max-width: 1367px) {
+    font-size: vwh(40px);
+  }
+  @media screen and (max-width: 770px) {
+    font-size: vwt(28px);
+  }
+  @media screen and (max-width: 378px) {
+    font-size: vwm(28px);
+  }
+}
+
+@mixin h3 {
+  font-size: vw(28px);
+  line-height: 100%;
+  @media screen and (max-width: 1367px) {
+    font-size: vwh(28px);
+  }
+  @media screen and (max-width: 770px) {
+    font-size: vwt(24px);
+  }
+  @media screen and (max-width: 378px) {
+    font-size: vwm(24px);
+  }
+}
+
+@mixin h4 {
+  font-size: vw(20px);
+  line-height: 100%;
+  @media screen and (max-width: 1367px) {
+    font-size: vwh(20px);
+  }
+  @media screen and (max-width: 770px) {
+    font-size: vwt(20px);
+  }
+  @media screen and (max-width: 378px) {
+    font-size: vwm(20px);
+  }
+}
+
+@mixin t1 {
+  font-size: vw(20px);
+  line-height: 150%;
+  @media screen and (max-width: 1367px) {
+    font-size: vwh(20px);
+  }
+  @media screen and (max-width: 770px) {
+    font-size: vwt(20px);
+  }
+  @media screen and (max-width: 378px) {
+    font-size: vwm(20px);
+  }
+}
+
+@mixin t2 {
+  font-size: vw(16px);
+  line-height: 150%;
+  @media screen and (max-width: 1367px) {
+    font-size: vwh(16px);
+  }
+  @media screen and (max-width: 770px) {
+    font-size: vwt(16px);
+  }
+  @media screen and (max-width: 378px) {
+    font-size: vwm(16px);
+  }
+}
+
+@mixin t2_b {
+  font-size: vw(16px);
+  line-height: 150%;
+  font-weight: 700;
+  @media screen and (max-width: 1367px) {
+    font-size: vwh(16px);
+  }
+  @media screen and (max-width: 770px) {
+    font-size: vwt(16px);
+  }
+  @media screen and (max-width: 378px) {
+    font-size: vwm(16px);
+  }
+}
+
+@mixin t3 {
+  font-size: vw(14px);
+  line-height: 150%;
+  @media screen and (max-width: 1367px) {
+    font-size: vwh(14px);
+  }
+  @media screen and (max-width: 770px) {
+    font-size: vwt(14px);
+  }
+  @media screen and (max-width: 378px) {
+    font-size: vwm(14px);
+  }
+}
+
+@mixin t3_b {
+  font-size: vw(14px);
+  line-height: 150%;
+  font-weight: 700;
+  @media screen and (max-width: 1367px) {
+    font-size: vwh(14px);
+  }
+  @media screen and (max-width: 770px) {
+    font-size: vwt(14px);
+  }
+  @media screen and (max-width: 378px) {
+    font-size: vwm(14px);
+  }
+}
+
+//Border
+@mixin border-radius-8px {
+  border-radius: vw(8px);
+  @media screen and (max-width: 1367px) {
+    border-radius: vwh(8px);
+  }
+  @media screen and (max-width: 770px) {
+    border-radius: vwt(8px);
+  }
+  @media screen and (max-width: 378px) {
+    border-radius: vwm(8px);
+  }
+}
+
+@mixin border-radius-4px {
+  border-radius: vw(4px);
+  @media screen and (max-width: 1367px) {
+    border-radius: vwh(4px);
+  }
+  @media screen and (max-width: 770px) {
+    border-radius: vwt(4px);
+  }
+  @media screen and (max-width: 378px) {
+    border-radius: vwm(4px);
+  }
+}
+
+//Grid
+@mixin gap20 {
+  gap: vw(20px);
+  @media screen and (max-width: 1367px) {
+    gap: vwh(20px);
+  }
+  @media screen and (max-width: 770px) {
+    gap: vwt(20px);
+  }
+  @media screen and (max-width: 378px) {
+    gap: vwm(20px);
+  }
+}
+

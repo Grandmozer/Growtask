@@ -1,0 +1,105 @@
+@import "mixin";
+@import "variables";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+::placeholder {
+  color: var(--main-gray-dark);
+  font-weight: 400;
+  @include h2;
+  opacity: 1;
+}
+
+input,
+button,
+textarea,
+select {
+  margin: 0;
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus,
+a:focus {
+  /* outline: 2px solid var(--main-color); */
+  outline: none;
+}
+
+a {
+  font-family:  'Raleway', sans-serif;
+  color: var(--main-gray-dark);
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  color: var(--main-gray-dark);
+  font-style: normal;
+  //overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+  color: var(--text-icon-gray-black);
+}
+
+.container {
+  //width: var(--container-width);
+  width: auto;
+  //padding: 0 var(--gap);
+  margin: 0 vw(250px);
+  @media screen and (max-width: 1499px) {
+    margin: 0 vwh(45px);
+  }
+
+  @media screen and (max-width: 991px) {
+    margin: 0 vwt(16px);
+  }
+
+  @media screen and (max-width: 576px) {
+    margin: 0 vwm(16px);
+  }
+}
+
+.title {
+  @include t2;
+}
+
+@media only screen and (min-width: 991px) {
+  .burger,
+  .menu,
+  .mobile,
+  .menu-btn,
+  .btn-close-search-active,
+  .label-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .desktop {
+    display: none !important;
+  }
+}

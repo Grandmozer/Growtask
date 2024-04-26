@@ -1,279 +1,302 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="src/img/icon.svg" type="image/svg+xml" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="public/img/icon.svg" type="image/svg+xml"/>
 
-    <link rel="stylesheet" href="src/css/index.css" />
+    <script defer src="main.js"></script>
 
-    <script defer src="/src/js/slider.js"></script>
-    <script defer src="/src/js/galary.js"></script>
-    <script defer src="/src/js/questions.js"></script>
-    <script defer src="/src/js/smooth.js"></script>
-    <script defer src="/src/js/main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
 
     <title>Growtask</title>
-  </head>
-  <div id="scroll"></div>
-  <body>
-    <header class="header">
-      <div class="container header-content desktop">
-        <div class="logo">
-          <a class="" href="#scroll">
-            <img src="src/img/header/logo.svg" alt="logo" />
-          </a>
-          <a class="" href="#scroll">
-            <div class="logo-up" id="btnLogo">Наверх</div>
-          </a>
-        </div>
-        <div class="header-nav">
-          <button class="header-nav-item">
-            <a class="header-nav-item" href="#vacancy">Текст и картинки</a>
-          </button>
-          <button class="header-nav-item">
-            <a class="header-nav-item" href="#slider">Пример слайдера</a>
-          </button>
-          <button class="header-nav-item">
-            <a class="header-nav-item" href="#galary">Кнопки и картинки</a>
-          </button>
-          <button class="header-nav-item">
-            <a class="header-nav-item" href="#faq">Вопрос — ответ</a>
-          </button>
-          <a class="link-to-form" href="#form">К форме</a>
-        </div>
-      </div>
-      <div class="container header-content mobile">
-        <div class="logo">
-          <a class="" href="#scroll">
-            <img src="src/img/header/logo.svg" alt="logo" />
-          </a>
-          <a class="" href="#scroll">
-            <div class="logo-up">Меню</div>
-          </a>
-        </div>
-        <div class="menu-btn" id="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="header-nav menu">
-          <button class="header-nav-item">
-            <a class="header-nav-item" href="#vacancy">Текст и картинки</a>
-          </button>
-          <button class="header-nav-item">
-            <a class="header-nav-item" href="#slider">Пример слайдера</a>
-          </button>
-          <button class="header-nav-item">
-            <a class="header-nav-item" href="#galary">Кнопки и картинки</a>
-          </button>
-          <button class="header-nav-item">
-            <a class="header-nav-item" href="#faq">Вопрос — ответ</a>
-          </button>
-          <a class="link-to-form" href="#form">К форме</a>
+</head>
+<div id="scroll"></div>
+<body>
+<div id="app">
 
-          <div class="social">
-            <a class="vk" href="https://vk.com/growtask">
-              <img src="/src/img/footer/VK.svg" alt="" />
-            </a>
-            <a class="tg" href="https://t.me/growtask">
-              <img src="/src/img/footer/TG.svg" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
+
+    <!--    <header class="header">-->
+    <!--        <div class="container header__content desktop">-->
+    <!--            <div class="header__logo">-->
+    <!--                <a class="" href="#scroll">-->
+    <!--                    <img src="public/img/header/logo.svg" alt="logo"/>-->
+    <!--                </a>-->
+    <!--                <a class="" href="#scroll">-->
+    <!--                    <div class="header__logo__up" id="btnLogo">Наверх</div>-->
+    <!--                </a>-->
+    <!--            </div>-->
+    <!--            <div class="header__nav">-->
+    <!--                <button class="header__nav__item">-->
+    <!--                    <a class="header-nav-item" href="#vacancy">Текст и картинки</a>-->
+    <!--                </button>-->
+    <!--                <button class="header__nav__item">-->
+    <!--                    <a class="header-nav-item" href="#slider">Пример слайдера</a>-->
+    <!--                </button>-->
+    <!--                <button class="header__nav__item">-->
+    <!--                    <a class="header-nav-item" href="#galary">Кнопки и картинки</a>-->
+    <!--                </button>-->
+    <!--                <button class="header__nav__item">-->
+    <!--                    <a class="header-nav-item" href="#faq">Вопрос — ответ</a>-->
+    <!--                </button>-->
+    <!--                <a class="link-to-form" href="#form">К форме</a>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class="container header__content mobile">-->
+    <!--            <div class="header__logo">-->
+    <!--                <a class="" href="#scroll">-->
+    <!--                    <p id="logo">Меню</p>-->
+    <!--                    <img src="public/img/header/logo.svg" alt="logo"/>-->
+    <!--                </a>-->
+    <!--                <a class="" href="#scroll">-->
+    <!--                    <div class="header__logo__up">Наверх</div>-->
+    <!--                </a>-->
+    <!--            </div>-->
+    <!--            <div class="menu-btn" id="burger">-->
+    <!--                <span></span>-->
+    <!--                <span></span>-->
+    <!--                <span></span>-->
+    <!--            </div>-->
+    <!--            <div class="header__nav menu">-->
+    <!--                <button class="header-nav-item">-->
+    <!--                    <a class="header-nav-item" href="#vacancy">Текст и картинки</a>-->
+    <!--                </button>-->
+    <!--                <button class="header-nav-item">-->
+    <!--                    <a class="header-nav-item" href="#slider">Пример слайдера</a>-->
+    <!--                </button>-->
+    <!--                <button class="header-nav-item">-->
+    <!--                    <a class="header-nav-item" href="#galary">Кнопки и картинки</a>-->
+    <!--                </button>-->
+    <!--                <button class="header-nav-item">-->
+    <!--                    <a class="header-nav-item" href="#faq">Вопрос — ответ</a>-->
+    <!--                </button>-->
+    <!--                <a class="link-to-form" href="#form">К форме</a>-->
+
+    <!--                <div class="social">-->
+    <!--                    <a class="vk" href="https://vk.com/growtask">-->
+    <!--                        <img src="/public/img/footer/VK.svg" alt=""/>-->
+    <!--                    </a>-->
+    <!--                    <a class="tg" href="https://t.me/growtask">-->
+    <!--                        <img src="/public/img/footer/TG.svg" alt=""/>-->
+    <!--                    </a>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </header>-->
     <section class="hero container">
-      <div class="hero-text">
-        <h1 class="title-hero">Покажи нам чудеса <span>своей вёрстки</span></h1>
-        <p class="hero-p">
-          Это текстовое задание, которое нужно просто и грамотно сверстать. Мы уверены, что у тебя
-          всё получится.
-        </p>
-        <div class="hero_link-to-form">
-          <p>Покажи скролл на <span>до формы:</span></p>
-          <a class="link-to-form" href="#form">К форме</a>
+
+        <div>
+            <h1 class="hero__title">Покажи нам чудеса <span>своей вёрстки</span></h1>
+            <p class="hero__p">
+                Это текстовое задание, которое нужно просто и грамотно сверстать. Мы уверены, что у тебя
+                всё получится.
+            </p>
         </div>
-      </div>
-      <div class="imgs-hero">
-        <img src="/src/img/hero/image1.jpg" alt="" />
-        <img src="/src/img/hero/image3.jpg" alt="" />
-        <img src="/src/img/hero/image2.jpg" alt="" />
-      </div>
+        <div class="hero__link-to-form">
+            <p>Покажи скролл на <span>до формы:</span></p>
+            <a class="link-to-form" href="#form">К форме</a>
+        </div>
+
+        <div class="hero__imgs">
+            <img src="/public/img/hero/image1.jpg" alt=""/>
+            <img src="/public/img/hero/image3.jpg" alt=""/>
+            <img src="/public/img/hero/image2.jpg" alt=""/>
+        </div>
     </section>
     <section id="vacancy" class="about-vacancy">
-      <div class="container abaout-vacancy_content">
-        <div class="about-vacancy_info">
-          <h2 class="title">Про вакансию</h2>
-          <p class="about-vacancy_p">
-            Мы ищем аккуратного верстальщика, который хочет учиться и развиваться. С этим мы,
-            конечно же, поможем. <br /><br />Напомним про условия:
-          </p>
-          <div class="about-vacancy_info-card">
-            <p class="turquoise-text">20 000</p>
-            <p>Твой оклад на время стажировки (Возможны премии)</p>
-          </div>
-          <div class="about-vacancy_info-card">
-            <p class="turquoise-text">5/2</p>
-            <p>Рабочий график</p>
-          </div>
-          <div class="about-vacancy_info-card">
-            <p class="turquoise-text">8 ч</p>
-            <p>Рабочий день</p>
-          </div>
+        <div class="container about-vacancy_content">
+            <div class="about-vacancy_info">
+                <h2 class="title">Про вакансию</h2>
+                <p class="about-vacancy_p">
+                    Мы ищем аккуратного верстальщика, который хочет учиться и развиваться. С этим мы,
+                    конечно же, поможем. <br/><br/>Напомним про условия:
+                </p>
+                <div class="about-vacancy_info-card">
+                    <p class="turquoise-text">20 000</p>
+                    <p>Твой оклад на время стажировки (Возможны премии)</p>
+                </div>
+                <div class="about-vacancy_info-card">
+                    <p class="turquoise-text">5/2</p>
+                    <p>Рабочий график</p>
+                </div>
+                <div class="about-vacancy_info-card">
+                    <p class="turquoise-text">8 ч</p>
+                    <p>Рабочий день</p>
+                </div>
+            </div>
+            <div class="about-vacancy_imgs">
+                <img src="/public/img/about-vacancy/image1.jpg" alt=""/>
+                <img src="/public/img/about-vacancy/image2.jpg" alt=""/>
+                <img src="/public/img/about-vacancy/image3.jpg" alt=""/>
+            </div>
         </div>
-        <div class="about-vacancy_imgs">
-          <img src="/src/img/about-vacancy/image1.jpg" alt="" />
-          <img src="/src/img/about-vacancy/image2.jpg" alt="" />
-          <img src="/src/img/about-vacancy/image3.jpg" alt="" />
-        </div>
-      </div>
     </section>
     <section id="slider" class="slider container">
-      <div class="slider-title">
-        <h2 class="title">Сверстай слайдер</h2>
-        <div class="slider-arrows">
-          <button class="prev"></button>
-          <button class="next"></button>
+        <div class="slider-title">
+            <h2 class="title">Сверстай слайдер</h2>
+            <div class="slider-arrows">
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
         </div>
-      </div>
-      <div class="slider-list">
-        <div class="slider-track">
-          <div class="swiper-item">
-            <div class="swiper-content">
-              <img src="/src/img/slider/image1.jpg" alt="" />
-              <p class="slider-txt">Северная корона</p>
+        <div class="slider-list">
+            <div class="slider-track">
+                <a class="swiper-item" data-fancybox="gallery" data-caption="Caption #1">
+                    <div class="swiper-content">
+                        <img src="/public/img/slider/image1.jpg" alt=""/>
+                        <p class="slider-txt">Северная корона</p>
+                    </div>
+                </a>
+                <a class="swiper-item" data-fancybox="gallery" data-caption="Caption #2">
+                    <div class="swiper-content">
+                        <img src="/public/img/slider/image2.jpg" alt=""/>
+                        <p class="slider-txt">Moscow barbering school</p>
+                    </div>
+                </a>
+                <a class="swiper-item" data-fancybox="gallery" data-caption="Caption #3">
+                    <div class="swiper-content">
+                        <img src="/public/img/slider/image3.jpg" alt=""/>
+                        <p class="slider-txt">Rh store</p>
+                    </div>
+                </a>
+                <a class="swiper-item" data-fancybox="gallery" data-caption="Caption #4">
+                    <div class="swiper-content">
+                        <img src="/public/img/slider/image4.jpg" alt=""/>
+                        <p class="slider-txt">Poolspecial</p>
+                    </div>
+                </a>
+                <a class="swiper-item" data-fancybox="gallery" data-caption="Caption #5">
+                    <div class="swiper-content">
+                        <img src="/public/img/slider/image5.jpg" alt=""/>
+                        <p class="slider-txt">Rh prod</p>
+                    </div>
+                </a>
             </div>
-          </div>
-          <div class="swiper-item">
-            <div class="swiper-content">
-              <img src="/src/img/slider/image2.jpg" alt="" />
-              <p class="slider-txt">Moscow barbering school</p>
-            </div>
-          </div>
-          <div class="swiper-item">
-            <div class="swiper-content">
-              <img src="/src/img/slider/image3.jpg" alt="" />
-              <p class="slider-txt">Rh store</p>
-            </div>
-          </div>
-          <div class="swiper-item">
-            <div class="swiper-content">
-              <img src="/src/img/slider/image4.jpg" alt="" />
-              <p class="slider-txt">Poolspecial</p>
-            </div>
-          </div>
-          <div class="swiper-item">
-            <div class="swiper-content">
-              <img src="/src/img/slider/image5.jpg" alt="" />
-              <p class="slider-txt">Rh prod</p>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
     <section id="galary" class="galary">
-      <div class="container">
-        <div class="wrapper">
-          <div id="sliderWindow"></div>
-          <div class="galary-btns miniImgWrap">
-            <button class="galary-btn">
-              <div class="miniImg"></div>
-              <p>Картинка 1</p>
-            </button>
-            <button class="galary-btn">
-              <div class="miniImg"></div>
-              <p>Картинка 2</p>
-            </button>
-            <button class="galary-btn">
-              <div class="miniImg"></div>
-              <p>Картинка 3</p>
-            </button>
-          </div>
+        <div class="container">
+            <div class="wrapper">
+                <div id="sliderWindow"></div>
+                <div class="galary-btns miniImgWrap">
+                    <button class="galary-btn">
+                        <div class="miniImg"></div>
+                        <p>Картинка 1</p>
+                    </button>
+                    <button class="galary-btn">
+                        <div class="miniImg"></div>
+                        <p>Картинка 2</p>
+                    </button>
+                    <button class="galary-btn">
+                        <div class="miniImg"></div>
+                        <p>Картинка 3</p>
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <section id="faq" class="questions container">
-      <h2 class="title">Ответы на вопросы</h2>
-      <div>
-        <ul class="questions-list">
-          <li class="question">
-            <div class="line">
-              <h3>У вас много проектов?</h3>
-              <button class="question-plus"></button>
-            </div>
-            <p class="question-text">
-              Достаточно, чтобы работать и получать удовольствие от работы &#41;
-            </p>
-          </li>
-          <li class="question">
-            <div class="line">
-              <h3>Есть ли карьерный рост?</h3>
-              <button class="question-plus"></button>
-            </div>
-            <p class="question-text">
-              Карьерный рост есть, но он зависит только от тебя. Никто специально тянуть не будет.
-            </p>
-          </li>
-          <li class="question">
-            <div class="line">
-              <h3>У вас большой штат?</h3>
-              <button class="question-plus"></button>
-            </div>
-            <p class="question-text">Штат небольшой</p>
-          </li>
-          <li class="question">
-            <div class="line">
-              <h3>Какие цели у вашей студии?</h3>
-              <button class="question-plus"></button>
-            </div>
-            <p class="question-text">
-              Развивать свои продукты в среднем ценовом сегменте. Занять не занятую нишу отличных
-              сайтов по адекватной цене.
-            </p>
-          </li>
-        </ul>
-      </div>
+        <h2 class="title">Ответы на вопросы</h2>
+        <div>
+            <ul class="questions-list">
+                <li class="question">
+                    <div class="line">
+                        <h3>У вас много проектов?</h3>
+                        <button class="question-plus"></button>
+                    </div>
+                    <p class="question-text">
+                        Достаточно, чтобы работать и получать удовольствие от работы &#41;
+                    </p>
+                </li>
+                <li class="question">
+                    <div class="line">
+                        <h3>Есть ли карьерный рост?</h3>
+                        <button class="question-plus"></button>
+                    </div>
+                    <p class="question-text">
+                        Карьерный рост есть, но он зависит только от тебя. Никто специально тянуть не будет.
+                    </p>
+                </li>
+                <li class="question">
+                    <div class="line">
+                        <h3>У вас большой штат?</h3>
+                        <button class="question-plus"></button>
+                    </div>
+                    <p class="question-text">Штат небольшой</p>
+                </li>
+                <li class="question">
+                    <div class="line">
+                        <h3>Какие цели у вашей студии?</h3>
+                        <button class="question-plus"></button>
+                    </div>
+                    <p class="question-text">
+                        Развивать свои продукты в среднем ценовом сегменте. Занять не занятую нишу отличных
+                        сайтов по адекватной цене.
+                    </p>
+                </li>
+            </ul>
+        </div>
     </section>
     <footer id="form" class="footer">
-      <div class="container">
-        <div class="footer-block">
-          <div class="footer-left">
-            <h2 class="title">Форма ОС</h2>
-            <p>
-              Сверстай форму обратной связи. Будет круто, если заявку будут приходить сюда:
-              a@growtask.ru
-            </p>
-            <h3>Не забудь вставить соц.сети</h3>
-            <div class="social">
-              <a class="vk" href="https://vk.com/growtask">
-                <img src="/src/img/footer/VK.svg" alt="" />
-              </a>
-              <a class="tg" href="https://t.me/growtask">
-                <img src="/src/img/footer/TG.svg" alt="" />
-              </a>
+        <div class="container">
+            <div class="footer-block">
+                <div class="footer-left">
+                    <h2 class="title">Форма ОС</h2>
+                    <p>
+                        Сверстай форму обратной связи. Будет круто, если заявку будут приходить сюда:
+                        a@growtask.ru
+                    </p>
+
+                    <div class="desktop">
+                        <h3>Не забудь вставить соц.сети</h3>
+                        <div class="social ">
+                            <a class="vk" href="https://vk.com/growtask">
+                                <img src="/public/img/footer/VK.svg" alt=""/>
+                            </a>
+                            <a class="tg" href="https://t.me/growtask">
+                                <img src="/public/img/footer/TG.svg" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <form
+                            id="gform"
+                            class="inputs"
+                            method="post"
+                            action="https://script.google.com/macros/s/AKfycbywjmpe6usYoG0Cm3cjRygbkZHmYPrWJEjjnDZrO06ztDYomhD1f2MgZbXavua1RqupMw/exec"
+                    >
+                        <input placeholder="Напиши вопрос*" type="text" name="question" required/>
+                        <input placeholder="Телефон или почта*" type="text" name="contacts" required/>
+                        <input placeholder="Твоё имя*" type="text" name="name" required/>
+                        <input placeholder="Соц.сеть или мессенджер" type="text" name="social"/>
+                        <div class="form-btns">
+                            <button id="submit" class="link-to-form">Отправить заявку</button>
+                            <input type="checkbox" name="checkbox"/>
+                            <!--                            <label for="checkbox">Согласие с политикой</label>-->
+                        </div>
+
+                    </form>
+                </div>
+                <div class="container mobile">
+                    <h3>Не забудь вставить соц.сети</h3>
+                    <div class="social ">
+                        <a class="vk" href="https://vk.com/growtask">
+                            <img src="/src/img/footer/VK.svg" alt=""/>
+                        </a>
+                        <a class="tg" href="https://t.me/growtask">
+                            <img src="/src/img/footer/TG.svg" alt=""/>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="footer-right">
-            <form
-              id="gform"
-              class="inputs"
-              method="post"
-              action="https://script.google.com/macros/s/AKfycbywjmpe6usYoG0Cm3cjRygbkZHmYPrWJEjjnDZrO06ztDYomhD1f2MgZbXavua1RqupMw/exec"
-            >
-              <input placeholder="Напиши вопрос*" type="text" name="question" required />
-              <input placeholder="Телефон или почта*" type="text" name="contacts" required />
-              <input placeholder="Твоё имя*" type="text" name="name" required />
-              <input placeholder="Соц.сеть или мессенджер" type="text" name="social" />
-              <div class="form-btns">
-                <button id="submit" class="link-to-form">Отправить заявку</button>
-                <input type="checkbox" name="checkbox" />
-                <label for="checkbox">Согласие с политикой</label>
-              </div>
-            </form>
-          </div>
         </div>
-      </div>
     </footer>
-  </body>
+</div>
+<script type="module" src="/main.js"></script>
+</body>
 </html>
