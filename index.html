@@ -12,81 +12,76 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
-
     <title>Growtask</title>
 </head>
 <div id="scroll"></div>
 <body>
 <div id="app">
+    <header class="header">
+        <div class="container header__content desktop">
+            <a class="header__logo" href="#scroll">
 
+                <img src="public/img/header/logo.svg" alt="logo"/>
 
-    <!--    <header class="header">-->
-    <!--        <div class="container header__content desktop">-->
-    <!--            <div class="header__logo">-->
-    <!--                <a class="" href="#scroll">-->
-    <!--                    <img src="public/img/header/logo.svg" alt="logo"/>-->
-    <!--                </a>-->
-    <!--                <a class="" href="#scroll">-->
-    <!--                    <div class="header__logo__up" id="btnLogo">Наверх</div>-->
-    <!--                </a>-->
-    <!--            </div>-->
-    <!--            <div class="header__nav">-->
-    <!--                <button class="header__nav__item">-->
-    <!--                    <a class="header-nav-item" href="#vacancy">Текст и картинки</a>-->
-    <!--                </button>-->
-    <!--                <button class="header__nav__item">-->
-    <!--                    <a class="header-nav-item" href="#slider">Пример слайдера</a>-->
-    <!--                </button>-->
-    <!--                <button class="header__nav__item">-->
-    <!--                    <a class="header-nav-item" href="#galary">Кнопки и картинки</a>-->
-    <!--                </button>-->
-    <!--                <button class="header__nav__item">-->
-    <!--                    <a class="header-nav-item" href="#faq">Вопрос — ответ</a>-->
-    <!--                </button>-->
-    <!--                <a class="link-to-form" href="#form">К форме</a>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--        <div class="container header__content mobile">-->
-    <!--            <div class="header__logo">-->
-    <!--                <a class="" href="#scroll">-->
-    <!--                    <p id="logo">Меню</p>-->
-    <!--                    <img src="public/img/header/logo.svg" alt="logo"/>-->
-    <!--                </a>-->
-    <!--                <a class="" href="#scroll">-->
-    <!--                    <div class="header__logo__up">Наверх</div>-->
-    <!--                </a>-->
-    <!--            </div>-->
-    <!--            <div class="menu-btn" id="burger">-->
-    <!--                <span></span>-->
-    <!--                <span></span>-->
-    <!--                <span></span>-->
-    <!--            </div>-->
-    <!--            <div class="header__nav menu">-->
-    <!--                <button class="header-nav-item">-->
-    <!--                    <a class="header-nav-item" href="#vacancy">Текст и картинки</a>-->
-    <!--                </button>-->
-    <!--                <button class="header-nav-item">-->
-    <!--                    <a class="header-nav-item" href="#slider">Пример слайдера</a>-->
-    <!--                </button>-->
-    <!--                <button class="header-nav-item">-->
-    <!--                    <a class="header-nav-item" href="#galary">Кнопки и картинки</a>-->
-    <!--                </button>-->
-    <!--                <button class="header-nav-item">-->
-    <!--                    <a class="header-nav-item" href="#faq">Вопрос — ответ</a>-->
-    <!--                </button>-->
-    <!--                <a class="link-to-form" href="#form">К форме</a>-->
+                <p class="header__logo__up" id="btnLogo">Наверх</p>
+            </a>
+            <div class="header__nav">
+                <button class="header__nav__item">
+                    <a class="header-nav-item" href="#vacancy">Текст и картинки</a>
+                </button>
+                <button class="header__nav__item">
+                    <a class="header-nav-item" href="#slider">Пример слайдера</a>
+                </button>
+                <button class="header__nav__item">
+                    <a class="header-nav-item" href="#galary">Кнопки и картинки</a>
+                </button>
+                <button class="header__nav__item">
+                    <a class="header-nav-item" href="#faq">Вопрос — ответ</a>
+                </button>
+                <a class="link-to-form" href="#form">К форме</a>
+            </div>
+        </div>
+        <div class="container header__content mobile">
+            <div class="header__logo">
+<!--                <a class="" href="#scroll">-->
+<!--                    <p id="logo">Меню</p>-->
+<!--                    <img src="public/img/header/logo.svg" alt="logo"/>-->
+<!--                </a>-->
+                <a class="" href="#scroll">
+                    <div class="header__logo__up">Наверх</div>
+                </a>
+            </div>
+            <div class="menu-btn" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="header__nav menu">
+                <button class="header-nav-item">
+                    <a class="header-nav-item" href="#vacancy">Текст и картинки</a>
+                </button>
+                <button class="header-nav-item">
+                    <a class="header-nav-item" href="#slider">Пример слайдера</a>
+                </button>
+                <button class="header-nav-item">
+                    <a class="header-nav-item" href="#galary">Кнопки и картинки</a>
+                </button>
+                <button class="header-nav-item">
+                    <a class="header-nav-item" href="#faq">Вопрос — ответ</a>
+                </button>
+                <a class="link-to-form" href="#form">К форме</a>
 
-    <!--                <div class="social">-->
-    <!--                    <a class="vk" href="https://vk.com/growtask">-->
-    <!--                        <img src="/public/img/footer/VK.svg" alt=""/>-->
-    <!--                    </a>-->
-    <!--                    <a class="tg" href="https://t.me/growtask">-->
-    <!--                        <img src="/public/img/footer/TG.svg" alt=""/>-->
-    <!--                    </a>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </header>-->
+                <div class="social">
+                    <a class="vk" href="https://vk.com/growtask">
+                        <img src="/public/img/footer/VK.svg" alt=""/>
+                    </a>
+                    <a class="tg" href="https://t.me/growtask">
+                        <img src="/public/img/footer/TG.svg" alt=""/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
     <section class="hero container">
 
         <div>
@@ -102,9 +97,16 @@
         </div>
 
         <div class="hero__imgs">
-            <img src="/public/img/hero/image1.jpg" alt=""/>
-            <img src="/public/img/hero/image3.jpg" alt=""/>
-            <img src="/public/img/hero/image2.jpg" alt=""/>
+            <div>
+                <img src="/public/img/hero/image1.jpg" alt=""/>
+            </div>
+            <div>
+                <img src="/public/img/hero/image3.jpg" alt=""/>
+            </div>
+            <div>
+                <img src="/public/img/hero/image2.jpg" alt=""/>
+            </div>
+
         </div>
     </section>
     <section id="vacancy" class="about-vacancy">
