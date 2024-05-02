@@ -42,11 +42,12 @@
             </div>
         </div>
         <div class="container header__content mobile">
-            <div class="header__logo">
-<!--                <a class="" href="#scroll">-->
-<!--                    <p id="logo">Меню</p>-->
-<!--                    <img src="public/img/header/logo.svg" alt="logo"/>-->
-<!--                </a>-->
+            <div id="header-logo"
+                 class="header__logo">
+                <p id="logo">Меню</p>
+                <a class="" href="#scroll">
+                    <img src="public/img/header/logo.svg" alt="logo"/>
+                </a>
                 <a class="" href="#scroll">
                     <div class="header__logo__up">Наверх</div>
                 </a>
@@ -57,18 +58,20 @@
                 <span></span>
             </div>
             <div class="header__nav menu">
-                <button class="header-nav-item">
-                    <a class="header-nav-item" href="#vacancy">Текст и картинки</a>
-                </button>
-                <button class="header-nav-item">
-                    <a class="header-nav-item" href="#slider">Пример слайдера</a>
-                </button>
-                <button class="header-nav-item">
-                    <a class="header-nav-item" href="#galary">Кнопки и картинки</a>
-                </button>
-                <button class="header-nav-item">
-                    <a class="header-nav-item" href="#faq">Вопрос — ответ</a>
-                </button>
+                <div class="header__nav__list">
+                    <button class="header__nav__item">
+                        <a class="header-nav-item" href="#vacancy">Текст и картинки</a>
+                    </button>
+                    <button class="header__nav__item">
+                        <a class="header-nav-item" href="#slider">Пример слайдера</a>
+                    </button>
+                    <button class="header__nav__item">
+                        <a class="header-nav-item" href="#galary">Кнопки и картинки</a>
+                    </button>
+                    <button class="header__nav__item">
+                        <a class="header-nav-item" href="#faq">Вопрос — ответ</a>
+                    </button>
+                </div>
                 <a class="link-to-form" href="#form">К форме</a>
 
                 <div class="social">
@@ -83,7 +86,6 @@
         </div>
     </header>
     <section class="hero container">
-
         <div>
             <h1 class="hero__title">Покажи нам чудеса <span>своей вёрстки</span></h1>
             <p class="hero__p">
@@ -92,7 +94,7 @@
             </p>
         </div>
         <div class="hero__link-to-form">
-            <p>Покажи скролл на <span>до формы:</span></p>
+            <p>Покажи скролл <span>до формы:</span></p>
             <a class="link-to-form" href="#form">К форме</a>
         </div>
 
@@ -106,31 +108,32 @@
             <div>
                 <img src="/public/img/hero/image2.jpg" alt=""/>
             </div>
-
         </div>
     </section>
     <section id="vacancy" class="about-vacancy">
-        <div class="container about-vacancy_content">
-            <div class="about-vacancy_info">
+        <div class="container about-vacancy__content">
+            <div class="about-vacancy__info">
                 <h2 class="title">Про вакансию</h2>
-                <p class="about-vacancy_p">
+                <p class="about-vacancy__info__p">
                     Мы ищем аккуратного верстальщика, который хочет учиться и развиваться. С этим мы,
                     конечно же, поможем. <br/><br/>Напомним про условия:
                 </p>
-                <div class="about-vacancy_info-card">
+            </div>
+            <div class="about-vacancy__cards">
+                <div class="about-vacancy__cards__item">
                     <p class="turquoise-text">20 000</p>
                     <p>Твой оклад на время стажировки (Возможны премии)</p>
                 </div>
-                <div class="about-vacancy_info-card">
+                <div class="about-vacancy__cards__item">
                     <p class="turquoise-text">5/2</p>
                     <p>Рабочий график</p>
                 </div>
-                <div class="about-vacancy_info-card">
+                <div class="about-vacancy__cards__item">
                     <p class="turquoise-text">8 ч</p>
                     <p>Рабочий день</p>
                 </div>
             </div>
-            <div class="about-vacancy_imgs">
+            <div class="about-vacancy__images">
                 <img src="/public/img/about-vacancy/image1.jpg" alt=""/>
                 <img src="/public/img/about-vacancy/image2.jpg" alt=""/>
                 <img src="/public/img/about-vacancy/image3.jpg" alt=""/>

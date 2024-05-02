@@ -84,7 +84,7 @@ h6 {
 }
 
 .title {
-  @include t2;
+  @include h2;
 }
 
 @media only screen and (min-width: 991px) {

@@ -8,7 +8,6 @@ menuBtn.addEventListener('click', function () {
   menu.classList.toggle('active');
   logo.classList.toggle('logo-menu');
 
-
 });
 
 li.forEach(function (button) {

@@ -18,7 +18,7 @@
     grid-column-gap: vwt(16px);
   }
   @media only screen and (max-width: 576px) {
-    padding-top: vwm(70px);
+    padding-top: vwm(65px); //тут должно быть 70px
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr;
     gap: vwm(40px) 0;
@@ -100,16 +100,20 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: vw(20px) vw(20px);
+    padding-bottom: vw(120px);
 
     @media only screen and (max-width: 1499px) {
       gap: vwh(20px) vwh(20px);
+      padding-bottom: vwh(120px);
     }
     @media only screen and (max-width: 991px) {
       gap: vwt(20px) vwt(20px);
+      padding-bottom: vwt(120px);
     }
     @media only screen and (max-width: 576px) {
       grid-area: 2/1/4/2;
       gap: vwm(16px) vwm(16px);
+      padding-bottom: vwm(120px);
     }
 
     div {

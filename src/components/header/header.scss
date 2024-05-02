@@ -29,6 +29,9 @@
     justify-content: center;
     align-items: center;
 
+    @media only screen and (max-width: 991px) {
+      justify-content: space-between;
+    }
   }
 
   &__nav {
@@ -37,6 +40,44 @@
     align-items: center;
     flex-grow: 1;
     gap: 12px;
+
+    &__list {
+      gap: vw(12px);
+      @media only screen and (max-width: 1499px) {
+        gap: vwh(12px);
+      }
+      @media only screen and (max-width: 991px) {
+        gap: vwt(12px);
+      }
+      @media only screen and (max-width: 576px) {
+        gap: vwm(12px);
+      }
+    }
+  }
+
+  #logo {
+    @include h4;
+    font-weight: 800;
+    position: absolute;
+    top: -100%;
+    padding: 0 15%;
+    width: vw(150px);
+    transition: var(--transition-base);
+    background-color: var(--white);
+
+    @media only screen and (max-width: 1499px) {
+      width: vwh(150px);
+    }
+    @media only screen and (max-width: 991px) {
+      width: vwt(150px);
+    }
+    @media only screen and (max-width: 576px) {
+      width: vwm(150px);
+    }
+  }
+
+  .logo-menu {
+    top: 30% !important;
   }
 
   &__logo {
@@ -83,35 +124,60 @@
   }
 }
 
-
 /*  Burger */
 
 /* Гамбургер иконка */
 .menu-btn {
-  width: 48px;
-  height: 48px;
-
+  width: vw(48px);
+  height: vw(48px);
   position: relative;
   z-index: 3;
   overflow: hidden;
   background-color: var(--main-color);
-  border-radius: 4px;
+  @include border-radius-4px;
+  cursor: pointer;
+  @media only screen and (max-width: 1499px) {
+    width: vwh(48px);
+    height: vwh(48px);
+  }
+  @media only screen and (max-width: 991px) {
+    width: vwt(48px);
+    height: vwt(48px);
+  }
+  @media only screen and (max-width: 576px) {
+    width: vwm(48px);
+    height: vwm(48px);
+  }
 }
 
 .menu-btn span {
-  width: 24px;
-  height: 2px;
+  width: vw(24px);
+  height: vw(2px);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--white);
   transition: all 0.5s;
+  @media only screen and (max-width: 1499px) {
+    width: vwh(24px);
+    height: vwh(2px);
+
+  }
+  @media only screen and (max-width: 991px) {
+    width: vwt(24px);
+    height: vwt(2px);
+  }
+  @media only screen and (max-width: 576px) {
+    width: vwm(24px);
+    height: vwm(2px);
+  }
 }
 
 .menu-btn span:nth-of-type(2) {
   top: calc(50% - 6px);
 }
+
 .menu-btn span:nth-of-type(3) {
   top: calc(50% + 6px);
 }
@@ -120,10 +186,12 @@
 .menu-btn.active span:nth-of-type(1) {
   display: none;
 }
+
 .menu-btn.active span:nth-of-type(2) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(45deg);
 }
+
 .menu-btn.active span:nth-of-type(3) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(-45deg);
@@ -134,14 +202,15 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vh;
+  width: 100%;
   height: 100%;
-  margin: 65px 0px 0px 0px;
-
+  margin: vw(65px) 0 0 0;
+  box-shadow: inset 0 0 vw(25px) rgba(5, 25, 25, 0.08);
+  gap: vw(40px);
   flex-direction: column;
   align-items: start;
   justify-content: start;
-
+  padding: vw(20px) vw(16px);
   background: var(--white);
 
   transform: translateX(-100%);
@@ -149,13 +218,30 @@
   z-index: 2;
   font-size: 24px;
   font-weight: 700;
+
+  @media only screen and (max-width: 1499px) {
+    margin: vwh(65px) 0 0 0;
+    box-shadow: inset 0 0 vwh(25px) rgba(5, 25, 25, 0.08);
+    gap: vwh(40px);
+    padding: vwh(20px) vwh(16px);
+
+  }
+  @media only screen and (max-width: 991px) {
+    margin: vwt(65px) 0 0 0;
+    box-shadow: inset 0 0 vwt(25px) rgba(5, 25, 25, 0.08);
+    gap: vwt(40px);
+    padding: vwt(20px) vwt(16px);
+
+  }
+  @media only screen and (max-width: 576px) {
+    margin: vwm(65px) 0 0 0;
+    box-shadow: inset 0 0 vwm(25px) rgba(5, 25, 25, 0.08);
+    gap: vwm(40px);
+    padding: vwm(20px) vwm(16px);
+
+  }
 }
 
 .menu.active {
   transform: translateX(0);
-}
-
-.menu li {
-  list-style-type: none;
-  padding-bottom: 60px;
 }

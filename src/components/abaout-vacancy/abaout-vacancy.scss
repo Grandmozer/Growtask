@@ -1,0 +1,59 @@
+@import "assets/scss/style";
+
+.about-vacancy{
+  background-color: var(--main-gray-lighter);
+  &__content{
+    display: grid;
+
+    gap: 80px 140px;
+    grid-template-areas:
+    "title image"
+    "cards image";
+    padding-top: vw(120px);
+  }
+  &__info{
+    display: grid;
+    grid-area: title;
+    gap: vw(40px);
+    @media only screen and (max-width: 1499px) {
+      gap: vwh(40px);
+        }
+        @media only screen and (max-width: 991px) {
+          gap: vwt(40px);
+        }
+        @media only screen and (max-width: 576px) {
+          gap: vwm(40px);
+        }
+    &__p{
+      @include t1;
+    }
+  }
+  &__cards{
+    grid-area: cards;
+    &__item{
+      display: flex;
+      //width: 26vw;
+      padding: vw(40px);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: vw(25px);
+      @include border-radius-8px;
+      background: var(--black);
+      @media only screen and (max-width: 1499px) {
+        gap: vwh(25px);
+        padding: vwh(40px);
+          }
+          @media only screen and (max-width: 991px) {
+            gap: vwt(25px);
+            padding: vwt(40px);
+          }
+          @media only screen and (max-width: 576px) {
+            gap: vwm(25px);
+            padding: vwm(40px);
+          }
+    }
+  }
+  &__images{
+    grid-area: 1 / 2 / 3 / 3;
+  }
+}
