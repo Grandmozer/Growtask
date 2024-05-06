@@ -4,17 +4,26 @@
   background-color: var(--main-gray-lighter);
   &__content{
     display: grid;
-
     gap: 80px 140px;
     grid-template-areas:
     "title image"
     "cards image";
     padding-top: vw(120px);
+    @media only screen and (max-width: 1499px) {
+      padding-top: vwh(120px);
+    }
+    @media only screen and (max-width: 991px) {
+      padding-top: vwt(120px);
+    }
+    @media only screen and (max-width: 576px) {
+      padding-top: vwm(120px);
+    }
   }
   &__info{
     display: grid;
     grid-area: title;
     gap: vw(40px);
+    position: sticky;
     @media only screen and (max-width: 1499px) {
       gap: vwh(40px);
         }
@@ -29,11 +38,15 @@
     }
   }
   &__cards{
+    display: grid;
+    gap: 20px;
     grid-area: cards;
+
     &__item{
       display: flex;
       //width: 26vw;
       padding: vw(40px);
+      color: var(--white);
       flex-direction: column;
       align-items: flex-start;
       gap: vw(25px);
@@ -42,18 +55,59 @@
       @media only screen and (max-width: 1499px) {
         gap: vwh(25px);
         padding: vwh(40px);
-          }
-          @media only screen and (max-width: 991px) {
-            gap: vwt(25px);
-            padding: vwt(40px);
-          }
-          @media only screen and (max-width: 576px) {
-            gap: vwm(25px);
-            padding: vwm(40px);
-          }
+      }
+      @media only screen and (max-width: 991px) {
+        gap: vwt(25px);
+        padding: vwt(40px);
+      }
+      @media only screen and (max-width: 576px) {
+        gap: vwm(25px);
+        padding: vwm(40px);
+      }
+      &__blue-text{
+        @include h1;
+        font-family: 'Gogh', sans-serif;
+        font-weight: 800;
+        color: var(--main-color1-light);
+      }
     }
   }
   &__images{
+    display: grid;
     grid-area: 1 / 2 / 3 / 3;
+    gap: vw(40px);
+    @media only screen and (max-width: 1499px) {
+      gap: vwh(40px);
+        }
+    @media only screen and (max-width: 991px) {
+      gap: vwt(40px);
+    }
+    @media only screen and (max-width: 576px) {
+      gap: vwm(40px);
+    }
+    &__image{
+      width: vw(700px);
+      height: vw(400px);
+      overflow: hidden;
+      @include border-radius-8px;
+      @media only screen and (max-width: 1499px) {
+        width: vwh(700px);
+        height: vwh(400px);
+      }
+      @media only screen and (max-width: 991px) {
+        width: vwt(700px);
+        height: vwt(400px);
+      }
+      @media only screen and (max-width: 576px) {
+        width: vwm(700px);
+        height: vwm(400px);
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
   }
-}
+  }
